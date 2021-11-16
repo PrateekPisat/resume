@@ -5,6 +5,7 @@
     <EducationEntry university="Northerastern University" address="Boston, MA" college="College of Computer and Information Science" degreeName="Master’s Degree in Computer Science" graduationDate="December 2019" gpa=3.66 />
     <br>
     <EducationEntry university="Mumbai University" address="Mumbai, India" college="" degreeName="Bachelor’s Degree in Computer Engineering" graduationDate="June 2017" gpa=3.25 />
+    <br>
   </div>
 </template>
 

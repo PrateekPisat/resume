@@ -1,6 +1,9 @@
 <template>
-    <div class="space">
-        <div class="inline-block float-left font-bold">{{ university }}{{ address }}</div>
+    <div>
+        <div class="inline-block float-left">
+            <span class="font-bold">{{ university }}, </span>
+            <span>{{ address }}</span>
+        </div>
         <div class="inline-block float-right">{{ graduationDate }}</div>
         <br>
         <div>{{ college }}</div>
