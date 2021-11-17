@@ -1,12 +1,6 @@
 <template>
     <div>
-        <div class="inline-block float-left">
-            <span class="font-bold">{{ university }}, </span>
-            <span>{{ address }}</span>
-        </div>
-        <div class="inline-block float-right">{{ graduationDate }}</div>
-        <br>
-        <div>{{ college }}</div>
+        <EntryHeader :university="university" :address="address" :college="college" :graduationDate="graduationDate"/>
         <div>
             <span class="italic">{{ degreeName }}</span>
             <span>, GPA: {{ gpa }}/4.0</span>
@@ -15,9 +9,11 @@
 </template>
 
 <script lang="ts">
-import { Vue } from 'vue-class-component';
+import { Options, Vue } from 'vue-class-component';
 import { Prop } from 'vue-property-decorator';
+import EntryHeader from './EntryHeader.vue'
 
+@Options({components: {EntryHeader}})
 export default class EducationEntry extends Vue {
     @Prop() university !: string;
     @Prop() address !: string;

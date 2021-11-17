@@ -12,6 +12,7 @@
             <TechinicalKnowledgeRow v-for="(detail, header) in details" :key="detail.key" :header="header" :details="detail" />
         </tbody>
     </table>
+    <br>
 </template>
 
 <script lang="ts">
