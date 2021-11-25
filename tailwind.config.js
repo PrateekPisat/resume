@@ -5,6 +5,9 @@ module.exports = {
     container: {
       center: true,
     },
+    fontFamily: {
+      sans: ['"sans-serif"']
+    },
     extend: {},
   },
   variants: {

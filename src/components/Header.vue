@@ -3,8 +3,8 @@
     <p class="text-3xl font-bold text-center">{{ name }}</p>
     <p class="text-center">
       <span><i class="fas fa-map-marked"></i> {{ address }} </span> | 
-      <span><i class="fas fa-phone-square-alt fa-lg"></i> {{  phoneNumber }} </span> | 
-      <span><i class="fas fa-envelope-square fa-lg"></i> {{ emailId }} </span> | 
+      <span><i class="fas fa-phone-square-alt fa-lg"></i> {{  phoneNumber }}</span> | 
+      <span><a :href="mailToLink"><i class="fas fa-envelope-square fa-lg"></i></a> {{ emailId }} </span> | 
       <span><a :href="linkedInURL" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></span> | 
       <span><a :href="githubURL"><i class="fab fa-github-square fa-lg"></i></a></span>
     </p>
@@ -22,5 +22,9 @@ export default class Header extends Vue {
   @Prop() phoneNumber!: string
   @Prop() linkedInURL!: string
   @Prop() githubURL!: string
+
+  get mailToLink() {
+    return 'mailto:' + this.emailId;
+  }
 }
 </script>

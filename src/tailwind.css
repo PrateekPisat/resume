@@ -10,3 +10,7 @@ hr::after {
     position: absolute;
     transform: translate(var(--trans-x), var(--trans-y));
   }
+
+html {
+  font-size: 16px
+}
